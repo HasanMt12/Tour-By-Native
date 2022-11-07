@@ -1,4 +1,5 @@
 import Login from "../Pages/AccessPage/Login";
+import Register from "../Pages/AccessPage/Register";
 import Service from "../Pages/Service";
 
 const { createBrowserRouter } = require("react-router-dom");
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
         {
           path: '/service',
           element: <Service></Service>
+        },
+        {
+          path: '/signUp',
+          element: <Register></Register>
         }
       ]
     }
