@@ -1,12 +1,30 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import { toast } from 'react-toastify';
+import { AuthContext } from '../../Context/AuthProvider';
 
 
-const handleRegister = event => {
-    event.preventDefault();
-}
+
 
 const Register = () => {
+
+    const {createUser} = useContext(AuthContext)
+
+    const handleRegister = event => {
+    event.preventDefault();
+     const form = event.target;
+        const email = form.email.value;
+        const password = form.password.value;
+        
+        createUser(email, password)
+        .then(result => {
+            const user = result.user;
+            console.log(user);
+            toast.success('user successfully register')
+            form.reset();
+        })
+        .catch(err => console.error(err));
+}
     return (
          <div className="w-full mx-auto bg-gray-200 max-w-md p-8 space-y-3 rounded-xl dark:bg-gray-900 dark:text-gray-100">
 	<h1 className="text-2xl font-bold text-center">Login</h1>
