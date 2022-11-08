@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const SingleServiceCard = ({service}) => {
-     const { ServiceName, price, image, picture, duration ,details } = service;
+const AllServiceCard = ({allService}) => {
+     const { ServiceName, price, image, picture, duration ,details } = allService;
     return (
-       <div className="max-w-sm p-4 shadow-md dark:bg-gray-900 dark:text-gray-100 ">
+          <div className="max-w-sm p-4 shadow-md dark:bg-gray-900 dark:text-gray-100 ">
                     <div className="space-y-4">
                         <div className="space-y-2">
                             <img src={image} alt="" className="block object-cover object-center w-full rounded-md h-72 dark:bg-gray-500 cursor: zoom-in" />
@@ -38,4 +38,4 @@ const SingleServiceCard = ({service}) => {
     );
 };
 
-export default SingleServiceCard;
+export default AllServiceCard;

@@ -4,6 +4,7 @@ import Service from "../Pages/HomePage/Service";
 import Blog from "../Pages/blog/Blog"
 import Faq from "../Pages/faq/Faq"
 import ErrorPage from "../Pages/ErrorPage/ErrorPage";
+import AllService from "../Pages/All service/AllService";
 const { createBrowserRouter } = require("react-router-dom");
 const { default: Main } = require("../layout/Main");
 const { default: Home } = require("../Pages/HomePage/Home");
@@ -38,6 +39,10 @@ const router = createBrowserRouter([
         {
           path: '/faq',
           element: <Faq></Faq>
+        },
+        {
+          path: 'allServices',
+          element: <AllService></AllService>
         }
       ]
     }
