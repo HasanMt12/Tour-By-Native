@@ -7,6 +7,9 @@ export const Header = () => {
      <li className=' font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400'><Link to='/'>Home</Link></li>
      <li className=' font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400'><Link to='/login'>login</Link></li>
      <li className=' font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400'><Link to='/service'>service</Link></li>
+     <li className=' font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400'><Link to='/blog'>blog</Link></li>
+     <li className=' font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400'><Link to='/faq'>FAQ</Link></li> 
+     
      </>
     return (
        <div class="bg-gray-900">
@@ -39,36 +42,7 @@ export const Header = () => {
           </a>
           <ul class="flex items-center hidden space-x-8 lg:flex">
            {menu}
-            <li>
-              <a
-                href="/"
-                aria-label="Our product"
-                title="Our product"
-                class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
-              >
-                Features
-              </a>
-            </li>
-            <li>
-              <a
-                href="/"
-                aria-label="Product pricing"
-                title="Product pricing"
-                class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
-              >
-                Pricing
-              </a>
-            </li>
-            <li>
-              <a
-                href="/"
-                aria-label="About us"
-                title="About us"
-                class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
-              >
-                About us
-              </a>
-            </li>
+    
           </ul>
           <ul class="flex items-center hidden space-x-8 lg:flex">
             <li>
