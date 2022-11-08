@@ -13,6 +13,21 @@
     "review": "4.8/5",
     "Health & Safety": "Walking parts of all tours are done as safely as possible,  Car sanitized before every tour."
   },
+  {
+    "ServiceName": "Day tour in Cox's Bazar Beach",
+    "price": "1000",
+    "duration": "12",
+    "transport": "Meet at the beach by the Laboni Beach or Kolatoli Beach ,Free parking is available.",
+    "picture": "https://i.postimg.cc/9MbXCX61/blog-L0cqli-TMh-Cij-WRKpxzkdd-Xq-Io4u44-Y3-O.jpg",
+    "service1": "Food & Soft Drinks",
+    "service2": "you should go on a drive along the Marine Drive Road of Cox's Bazar.",
+    "others":"AC / Non ac Transport / Ship / Local Transport / Boat / Trollar",
+    "details": "At first glance, you can start with Cox's Bazar Beach to feel the sound of the waves and the breeze. You may begin walking the coast from end to end at several beach points such as Suganda Beach, Laboni Beach and Kolatoli Beach. Don't forget to check out the coral beach named Inani Beach, about 32 km from Dolphin Square. In addition, you should go on a drive along the Marine Drive Road of Cox's Bazar. This road offers the most scenic beauty that covers the beautiful beaches of Cox's Bazar and the mountains on each side.",
+    "image": "https://i.postimg.cc/1z5sM1nq/blog4d-KAKe-Kwa-LG-Ip-VCQXRBfc84-THl-h-TO.jpg",
+    "review": "4.6/5",
+    
+   "Health & Safety": "Walking parts of all tours are done as safely as possible,  Car sanitized before every tour."
+  },  
     {
     "ServiceName": "Countryside Day Trip",
     "price": "900",
@@ -41,21 +56,7 @@
     "review": "4.9/5",
     "Health & Safety": "Walking parts of all tours are done as safely as possible,  Car sanitized before every tour."
   },  
-  {
-    "ServiceName": "Day tour in Cox's Bazar Beach",
-    "price": "1000",
-    "duration": "12",
-    "transport": "Meet at the beach by the Laboni Beach or Kolatoli Beach ,Free parking is available.",
-    "picture": "https://i.postimg.cc/9MbXCX61/blog-L0cqli-TMh-Cij-WRKpxzkdd-Xq-Io4u44-Y3-O.jpg",
-    "service1": "Food & Soft Drinks",
-    "service2": "you should go on a drive along the Marine Drive Road of Cox's Bazar.",
-    "others":"AC / Non ac Transport / Ship / Local Transport / Boat / Trollar",
-    "details": "At first glance, you can start with Cox's Bazar Beach to feel the sound of the waves and the breeze. You may begin walking the coast from end to end at several beach points such as Suganda Beach, Laboni Beach and Kolatoli Beach. Don't forget to check out the coral beach named Inani Beach, about 32 km from Dolphin Square. In addition, you should go on a drive along the Marine Drive Road of Cox's Bazar. This road offers the most scenic beauty that covers the beautiful beaches of Cox's Bazar and the mountains on each side.",
-    "image": "https://i.postimg.cc/1z5sM1nq/blog4d-KAKe-Kwa-LG-Ip-VCQXRBfc84-THl-h-TO.jpg",
-    "review": "4.6/5",
-    
-   "Health & Safety": "Walking parts of all tours are done as safely as possible,  Car sanitized before every tour."
-  },  
+  
   {
     "ServiceName": "Sonargaon Day Tour from Dhaka",
     "price": "720",
