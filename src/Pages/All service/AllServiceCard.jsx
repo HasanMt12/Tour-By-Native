@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const AllServiceCard = ({allService}) => {
-     const { ServiceName, price, image, picture, duration ,details } = allService;
+     const { ServiceName, price, image, _id, picture, duration ,details } = allService;
     return (
           <div className="max-w-sm p-4 shadow-md dark:bg-gray-900 dark:text-gray-100 ">
                     <div className="space-y-4">
@@ -26,7 +26,7 @@ const AllServiceCard = ({allService}) => {
                             {
                         details.length > 100 ?
                             <p>{details.slice(0, 100) + '...'} 
-                            <Link to="/login" className='font-semibold text-blue-600  text-lg '> Details</Link> </p>
+                            <Link to={`/serviceDetail/${_id}`} className='font-semibold text-blue-600  text-lg '> Details</Link> </p>
                             :
                             <p>{details}</p>
                     }

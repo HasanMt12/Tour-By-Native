@@ -5,6 +5,7 @@ import Blog from "../Pages/blog/Blog"
 import Faq from "../Pages/faq/Faq"
 import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 import AllService from "../Pages/All service/AllService";
+import ServiceDetails from "../Pages/serviceDetails/ServiceDetails";
 const { createBrowserRouter } = require("react-router-dom");
 const { default: Main } = require("../layout/Main");
 const { default: Home } = require("../Pages/HomePage/Home");
@@ -41,8 +42,13 @@ const router = createBrowserRouter([
           element: <Faq></Faq>
         },
         {
-          path: 'allServices',
+          path: '/allServices',
           element: <AllService></AllService>
+        },
+        {
+          path: '/serviceDetail/:id',
+          element: <ServiceDetails></ServiceDetails>,
+          loader: ({params})=> fetch(`http://localhost:5000/allServices/${params.id}`)
         }
       ]
     }
