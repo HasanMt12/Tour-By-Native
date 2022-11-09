@@ -1,4 +1,5 @@
 import React from 'react';
+import { PhotoProvider, PhotoView } from 'react-photo-view';
 import { Link } from 'react-router-dom';
 
 const SingleServiceCard = ({service}) => {
@@ -7,7 +8,12 @@ const SingleServiceCard = ({service}) => {
        <div className="max-w-sm p-4 shadow-md dark:bg-gray-900 dark:text-gray-100 ">
                     <div className="space-y-4">
                         <div className="space-y-2">
-                            <img src={image} alt="" className="block object-cover object-center w-full rounded-md h-72 dark:bg-gray-500 cursor: zoom-in" />
+                            <PhotoProvider>
+                                <PhotoView src={image}>
+                                    <img src={image} alt="" className="block object-cover object-center w-full rounded-md h-72 dark:bg-gray-500 cursor: zoom-in" />
+                                </PhotoView>
+                            </PhotoProvider>
+
                             <div className="flex justify-between pb-4 border-bottom">
                         <div className="flex items-center">
                             <p className="mb-0 capitalize dark:text-gray-100">Duration : {duration} hours</p>
