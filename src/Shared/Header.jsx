@@ -1,11 +1,33 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
+import { AuthContext } from '../Context/AuthProvider';
 
 export const Header = () => {
+  const {user, logOut} = useContext(AuthContext);
+const handleSignOut = () => {
+        logOut()
+            .then()
+            .catch();
+    }
+
      const [isMenuOpen, setIsMenuOpen] = useState(false);
      const menu = <>
      <li className=' font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400'><Link to='/'>Home</Link></li>
-     <li className=' font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400'><Link to='/login'>login</Link></li>
+        
+        {
+            user?.email ? 
+            <>
+            <li className='font-semibold'><Link to='/myReview'>my reviews</Link></li>
+             <li className='font-semibold'>
+              <button onClick={ handleSignOut } >Sign Out</button>
+              </li>
+            </>
+            :
+           <li className=' font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400'><Link to='/login'>login</Link></li>
+        }
+    
+     
+
      <li className=' font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400'><Link to='/service'>service</Link></li>
      <li className=' font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400'><Link to='/blog'>blog</Link></li>
      <li className=' font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400'><Link to='/faq'>FAQ</Link></li> 

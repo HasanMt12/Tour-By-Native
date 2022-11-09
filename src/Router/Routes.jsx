@@ -7,6 +7,8 @@ import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 import AllService from "../Pages/All service/AllService";
 import ServiceDetails from "../Pages/serviceDetails/ServiceDetails";
 import ReviewPostPage from "../Pages/reviews/ReviewPostPage";
+import MyReviews from "../Pages/myReview/MyReviews";
+import Reviews from "../Pages/reviews/Reviews";
 const { createBrowserRouter } = require("react-router-dom");
 const { default: Main } = require("../layout/Main");
 const { default: Home } = require("../Pages/HomePage/Home");
@@ -55,6 +57,15 @@ const router = createBrowserRouter([
           path: '/reviewsPost/:id',
           element: <ReviewPostPage></ReviewPostPage>,
           loader: ({params})=> fetch(`http://localhost:5000/allServices/${params.id}`)
+        },
+        {
+          path: '/myReview',
+          element: <MyReviews></MyReviews>
+        },
+        {
+          path:'/review',
+          element: <Reviews></Reviews>,
+         
         }
       ]
     }
