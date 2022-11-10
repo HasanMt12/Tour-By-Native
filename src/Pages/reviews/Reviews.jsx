@@ -1,20 +1,34 @@
-import React, { useEffect, useState } from 'react';
-import { useLoaderData } from 'react-router-dom';
+import React, {  useEffect, useState } from 'react';
+import AllReviewsCard from './AllReviewsCard';
 
 
-const Reviews = () => {
+
+const Reviews = ({id}) => {
+   
     
      const [reviews, setReviews] = useState([])
+     console.log(reviews);
     useEffect(() => {
-        fetch('http://localhost:5000/review')
+        fetch(`http://localhost:5000/allReview?service=${id}`)
       
             .then(res => res.json())
             .then(data => setReviews(data))
             
-    }, [reviews?._id])
+    }, [id])
     return (
         <div>
-            <h1>ou{reviews.length}</h1>
+           
+            
+            {
+                reviews.map( review=>
+                <AllReviewsCard
+               key={id}
+               review={review}
+                >
+                
+                </AllReviewsCard>)
+            }
+            
         </div>
     );
 };

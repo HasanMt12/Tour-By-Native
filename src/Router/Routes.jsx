@@ -9,9 +9,13 @@ import ServiceDetails from "../Pages/serviceDetails/ServiceDetails";
 import ReviewPostPage from "../Pages/reviews/ReviewPostPage";
 import MyReviews from "../Pages/myReview/MyReviews";
 import Reviews from "../Pages/reviews/Reviews";
+import UpdateReviews from "../Pages/myReview/UpdateReviews";
+import AddService from "../Pages/Addservice/AddService";
+import Private from "./privateRoutes/Private";
 const { createBrowserRouter } = require("react-router-dom");
 const { default: Main } = require("../layout/Main");
 const { default: Home } = require("../Pages/HomePage/Home");
+
 
 
 const router = createBrowserRouter([
@@ -50,23 +54,31 @@ const router = createBrowserRouter([
         },
         {
           path: '/serviceDetail/:id',
-          element: <ServiceDetails></ServiceDetails>,
+          element: <Private><ServiceDetails></ServiceDetails></Private>,
           loader: ({params})=> fetch(`http://localhost:5000/allServices/${params.id}`)
         },
         {
           path: '/reviewsPost/:id',
-          element: <ReviewPostPage></ReviewPostPage>,
+          element: <Private><ReviewPostPage></ReviewPostPage></Private>,
           loader: ({params})=> fetch(`http://localhost:5000/allServices/${params.id}`)
         },
         {
           path: '/myReview',
-          element: <MyReviews></MyReviews>
+          element: <MyReviews></MyReviews> 
         },
         {
           path:'/review',
           element: <Reviews></Reviews>,
-         
-        }
+        },
+        {
+          path:'/update/:id',
+          element: <UpdateReviews></UpdateReviews>,
+          loader: ({params})=> fetch(`http://localhost:5000/review/${params.id}`)
+        },
+        {
+          path: '/addService',
+          element:<AddService></AddService> 
+        },
       ]
     }
 ]);

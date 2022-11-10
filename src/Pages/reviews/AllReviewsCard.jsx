@@ -1,21 +1,21 @@
 import React, { useContext } from 'react';
-import { Link } from 'react-router-dom';
 import { AuthContext } from '../../Context/AuthProvider';
 
-const ReviewCard = ({r,handleRemove}) => {
-      const { user } = useContext(AuthContext);
-
-    const {price, email,_id,feedback} = r;
+const ReviewsCard = ({review}) => {
+    const {user} = useContext(AuthContext)
+    const {serviceName,price,feedback,email} = review;
     return (
-        <div className="container my-6 flex flex-col w-full max-w-lg p-6 mx-auto divide-y rounded-md divide-gray-700 dark:bg-gray-900 dark:text-gray-100">
+        <div className=''>
+           
+              <div className="container my-6  w-full max-w-lg p-6 mx-auto  rounded-md divide-gray-700 dark:bg-gray-900 dark:text-gray-100">
 	<div className="flex justify-between p-4">
 		<div className="flex space-x-4">
-			<div>
-				<img src={user?.photoUrl? user?.photoUrl: <p>{price}</p> } alt="" className="object-cover w-12 h-12 rounded-full dark:bg-gray-500" />
+			<div> 
+				<img src={email?.photoUrl? user?.photoUrl: <p></p> } alt="" className="object-cover w-12 h-12 rounded-full dark:bg-gray-500" />
 			</div>
 			<div>
-				<h4 className="font-bold">Leroy Jenkins</h4>
-				<span className="text-xs dark:text-gray-400">{feedback}</span>
+				<h4 className="font-bold">{email}</h4>
+				<span className="text-xs dark:text-gray-400">$ {price}</span>
 			</div>
 		</div>
 		<div className="flex items-center space-x-2 dark:text-yellow-500">
@@ -26,22 +26,16 @@ const ReviewCard = ({r,handleRemove}) => {
 		</div>
 	</div>
 	<div className="p-4 space-y-2 text-sm dark:text-gray-400">
-		<p>Vivamus sit amet turpis leo. Praesent varius eleifend elit, eu dictum lectus consequat vitae. Etiam ut dolor id justo fringilla finibus.</p>
-		<p>Donec eget ultricies diam, eu molestie arcu. Etiam nec lacus eu mauris cursus venenatis. Maecenas gravida urna vitae accumsan feugiat. Vestibulum commodo, ante sit urna purus rutrum sem.</p>
+		<h3>{serviceName}</h3>
+		<p>comments...{feedback}</p>
+		
 	</div>
     <div className="flex justify-between pb-4 border-bottom">
-		<div className="flex items-center">
-			<p  className="mb-0 capitalize dark:text-gray-100"></p>
-            <button onClick={() => handleRemove(_id)} >delete</button>
-		</div>
-
 		
-		 <Link to={`/update/${_id}`}>
-			<button>update</button>
-			</Link>
 	</div>
 </div>
+        </div>
     );
 };
 
-export default ReviewCard;
+export default ReviewsCard;

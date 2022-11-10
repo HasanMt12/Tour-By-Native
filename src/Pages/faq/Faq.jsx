@@ -1,7 +1,9 @@
 import React from 'react';
+import useTitle from '../../hooks/useTitle';
 
-const Faq = () => {
+const Faq = () => {useTitle('Faq')
     return (
+		
         <section className="dark:bg-gray-800 dark:text-gray-100">
 	<div className="container flex flex-col justify-center px-4 py-8 mx-auto md:p-8">
 		<p className="p-2 text-sm font-medium tracking-wider text-center uppercase">How it works</p>

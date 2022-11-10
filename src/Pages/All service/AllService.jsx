@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react';
+import useTitle from '../../hooks/useTitle';
 import AllServiceCard from './AllServiceCard';
 
 const AllService = () => {
+    useTitle('All service')
     const [allServices, setAllServices] = useState([]);
     
     useEffect( () =>{

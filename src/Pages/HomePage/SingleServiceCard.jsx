@@ -3,7 +3,7 @@ import { PhotoProvider, PhotoView } from 'react-photo-view';
 import { Link } from 'react-router-dom';
 
 const SingleServiceCard = ({service}) => {
-     const { ServiceName, price, image, picture, duration ,details } = service;
+     const { ServiceName, price, image, picture, duration ,details,_id } = service;
     return (
        <div className="max-w-sm p-4 shadow-md dark:bg-gray-900 dark:text-gray-100 ">
                     <div className="space-y-4">
@@ -32,7 +32,7 @@ const SingleServiceCard = ({service}) => {
                             {
                         details.length > 100 ?
                             <p>{details.slice(0, 100) + '...'} 
-                            <Link to="/login" className='font-semibold text-blue-600  text-lg '> Details</Link> </p>
+                            <Link to={`/serviceDetail/${_id}`} className='font-semibold text-blue-600  text-lg '> Details</Link> </p>
                             :
                             <p>{details}</p>
                     }

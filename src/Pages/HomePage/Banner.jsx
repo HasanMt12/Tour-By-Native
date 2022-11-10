@@ -15,7 +15,7 @@ const Banner = () => {
         </svg>
         <img
           className="object-cover w-full h-56 rounded shadow-lg lg:rounded-none lg:shadow-none md:h-96 lg:h-full"
-          src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+          src="https://i.postimg.cc/rwH9FPYW/Travel-Buddy.jpg"
           alt=""
         />
       </div>
@@ -27,10 +27,7 @@ const Banner = () => {
           <h2 className="mb-5 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
             Discover unforgettable travel experiences
             <br className="hidden md:block" />
-            can imagine{' '}
-            <span className="inline-block text-deep-purple-accent-400">
-              is real
-            </span>
+            
           </h2>
           <p className="pr-5 mb-5 text-base text-gray-700 md:text-lg">
             Discover unforgettable travel experiences

@@ -6,7 +6,7 @@ import 'react-photo-view/dist/react-photo-view.css';
 
 function App() {
   return (
-    <div >
+    <div className='w-11/12 mx-auto bg-gray-200' >
      
          <RouterProvider router={router}></RouterProvider>
 

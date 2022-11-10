@@ -15,7 +15,7 @@ const ReviewPostPage = () => {
         
 
         const review = {
-            service: _id,
+            serviceId: _id,
             serviceName: ServiceName,
             service,
             price,
@@ -52,6 +52,7 @@ const ReviewPostPage = () => {
        
            
 	
+        
        
 		<div className="w-11/12 px-6 py-16 rounded-md  dark:bg-gray-900  rounded-md ">
 			<h1 className="text-5xl font-extrabold dark:text-gray-50">Your opinion matters!</h1>
