@@ -13,7 +13,8 @@ const AddService = () => {
     const details = form.details.value;
     const picture = form.picture.value;
     // console.log(title, price, photoURL)
-    const data = {
+    const data = 
+    {
       ServiceName, price, duration, picture, details
     }
 
@@ -50,7 +51,7 @@ const AddService = () => {
                     <input name="price" type="text" placeholder="price" className="w-full rounded-md focus:ring focus:ring-violet-400 dark:border-gray-700 p-5" required />
                 </div>
                 <div>
-                    <input name="picture" type="url" placeholder="image url only"  className="w-full rounded-md focus:ring focus:ring-violet-400 dark:border-gray-700 p-5" required />
+                    <input name="picture" type="url" placeholder="image url only"  className="w-full rounded-md focus:ring focus:ring-violet-400 dark:border-gray-700 p-5"  />
                 </div>
                 <div>
                     <input name="details" type="text" placeholder="details"  className="w-full rounded-md focus:ring focus:ring-violet-400 dark:border-gray-700 p-5" required />

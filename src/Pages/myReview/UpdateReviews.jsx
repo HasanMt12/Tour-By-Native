@@ -23,6 +23,7 @@ const UpdateReviews = () => {
      email,
       name
     }
+    
 
     fetch(`http://localhost:5000/reviewRoute/${review._id}`, {
     method: "PUT",

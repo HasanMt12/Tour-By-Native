@@ -9,14 +9,24 @@ import ReviewCard from './ReviewCard';
 const MyReviews = () => {
 
     useTitle('My reviews')
-      const { user } = useContext(AuthContext);
+      const { user,logOut } = useContext(AuthContext);
        const [review, setReview] = useState([])
 
     useEffect(() => {
-        fetch(`http://localhost:5000/review?email=${user?.email}`)
-      
-            .then(res => res.json())
-            .then(data => setReview(data))
+        fetch(`http://localhost:5000/review?email=${user?.email}`,{
+            headers: {
+                authorization: `Bearer ${localStorage.getItem('travel-token')}`
+            }
+        })
+            .then(res => {
+                if (res.status === 401 || res.status === 403) {
+                    return logOut();
+                }
+                return res.json();
+            })
+            .then(data => {
+                setReview(data);
+            })
             
     }, [user?.email])
 
