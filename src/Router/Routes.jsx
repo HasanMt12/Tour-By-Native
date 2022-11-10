@@ -55,12 +55,12 @@ const router = createBrowserRouter([
         {
           path: '/serviceDetail/:id',
           element: <Private><ServiceDetails></ServiceDetails></Private>,
-          loader: ({params})=> fetch(`http://localhost:5000/allServices/${params.id}`)
+          loader: ({params})=> fetch(`https://service-review-server-side-gray.vercel.app/allServices/${params.id}`)
         },
         {
           path: '/reviewsPost/:id',
           element: <Private><ReviewPostPage></ReviewPostPage></Private>,
-          loader: ({params})=> fetch(`http://localhost:5000/allServices/${params.id}`)
+          loader: ({params})=> fetch(`https://service-review-server-side-gray.vercel.app/allServices/${params.id}`)
         },
         {
           path: '/myReview',
@@ -73,7 +73,7 @@ const router = createBrowserRouter([
         {
           path:'/update/:id',
           element: <UpdateReviews></UpdateReviews>,
-          loader: ({params})=> fetch(`http://localhost:5000/review/${params.id}`)
+          loader: ({params})=> fetch(`https://service-review-server-side-gray.vercel.app/review/${params.id}`)
         },
         {
           path: '/addService',

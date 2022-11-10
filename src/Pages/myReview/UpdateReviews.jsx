@@ -25,7 +25,7 @@ const UpdateReviews = () => {
     }
     
 
-    fetch(`http://localhost:5000/reviewRoute/${review._id}`, {
+    fetch(`https://service-review-server-side-gray.vercel.app/reviewRoute/${review._id}`, {
     method: "PUT",
     headers: {
         "content-type": "application/json",
