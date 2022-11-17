@@ -18,7 +18,7 @@ const AddService = () => {
       ServiceName, price, duration, picture, details
     }
 
-    fetch('https://service-review-server-side-gray.vercel.app/allServices', {
+    fetch('https://service-review-server-side-sable.vercel.app/allServices', {
       method: 'POST',
       headers: {
           'content-type': 'application/json'
@@ -39,24 +39,25 @@ const AddService = () => {
  
 
   return (
-<div>
-      <form onSubmit={handleServicePost} className="self-stretch mx-auto space-y-3 ng-untouched ng-pristine ng-valid">
+<div className='w-9/12 mx-auto bg-grey-200'>
+  <h3 className='text-sky-500 '> * You need to add service must provide valid photo URl</h3>
+      <form onSubmit={handleServicePost} className="self-stretch mx-auto m-6 space-y-3 ng-untouched ng-pristine ng-valid">
 				<div>
-					<input name="ServiceName" type="text" placeholder="title name"  className="w-full rounded-md focus:ring focus:ring-violet-400 dark:border-gray-700 p-5" />
+					<input name="ServiceName" type="text" placeholder="title name"  className="w-full rounded-md focus:ring focus:ring-violet-400 border-gray-700 p-5" />
 				</div>
                 <div>
-                    <input  name="duration" type="text" placeholder="duration" className="w-full rounded-md focus:ring focus:ring-violet-400 dark:border-gray-700 p-5"  />
+                    <input  name="duration" type="number" placeholder="duration" className="w-full rounded-md focus:ring focus:ring-violet-400 border-gray-700 p-5"  />
                 </div>
                 <div>
-                    <input name="price" type="text" placeholder="price" className="w-full rounded-md focus:ring focus:ring-violet-400 dark:border-gray-700 p-5" required />
+                    <input name="price" type="number" placeholder="price" className="w-full rounded-md focus:ring focus:ring-violet-400 border-gray-700 p-5" required />
                 </div>
                 <div>
-                    <input name="picture" type="url" placeholder="image url only"  className="w-full rounded-md focus:ring focus:ring-violet-400 dark:border-gray-700 p-5"  />
+                    <input name="picture" type="url" placeholder="image url only"  className="w-full rounded-md focus:ring focus:ring-violet-400 border-gray-700 p-5"  />
                 </div>
                 <div>
-                    <input name="details" type="text" placeholder="details"  className="w-full rounded-md focus:ring focus:ring-violet-400 dark:border-gray-700 p-5" required />
+                    <input name="details" type="text" placeholder="details"  className="w-full rounded-md focus:ring focus:ring-violet-400 border-gray-700 p-5" required />
                 </div>
-			<button type="submit" className="w-6/12 py-2 font-semibold rounded dark:bg-violet-400 dark:text-gray-900">Join the waitlist</button>
+			<button type="submit" className="w-6/12 py-2 font-semibold rounded bg-violet-400 text-gray-900">Add service</button>
                 
             </form>
 </div>

@@ -9,17 +9,18 @@ const Reviews = ({id}) => {
      const [reviews, setReviews] = useState([])
      console.log(reviews);
     useEffect(() => {
-        fetch(`https://service-review-server-side-gray.vercel.app/allReview?service=${id}`)
+        fetch(`https://service-review-server-side-sable.vercel.app/review?service=${id}`)
       
             .then(res => res.json())
             .then(data => setReviews(data))
             
     }, [id])
+
+
     return (
         <div>
-           
-            
-            {
+             
+        {
                 reviews.map( review=>
                 <AllReviewsCard
                key={id}
@@ -27,8 +28,7 @@ const Reviews = ({id}) => {
                 >
                 
                 </AllReviewsCard>)
-            }
-            
+            }     
         </div>
     );
 };

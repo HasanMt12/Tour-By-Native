@@ -3,10 +3,10 @@ import React from 'react';
 const Section = () => {
     return (
         <div>
-            <section className="bg-gray-500 text-white">
+            <section className="bg-gray-800 text-white">
   <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
     <div className="mx-auto max-w-lg text-center">
-      <h2 className="text-3xl font-bold sm:text-4xl">Up coming Service</h2>
+      <h2 className="text-3xl font-bold text-sky-600 sm:text-4xl">Up coming Service</h2>
 
       <p className="mt-4 text-gray-300">
         A comprehensive, up-to-date travel guide for your selected destination showing you the best do and see activities, restaurants, cafés, nightlife, shopping and much more.

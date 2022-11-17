@@ -24,12 +24,12 @@ const Banner = () => {
           <p className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-teal-accent-400">
             Tours By Native
           </p>
-          <h2 className="mb-5 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
+          <h2 className="mb-5 font-sans text-3xl font-bold tracking-tight text-sky-900 sm:text-4xl sm:leading-none">
             Discover unforgettable travel experiences
             <br className="hidden md:block" />
             
           </h2>
-          <p className="pr-5 mb-5 text-base text-gray-700 md:text-lg">
+          <p className="pr-5 mb-5 text-sky-600 text-gray-700 md:text-lg">
             Discover unforgettable travel experiences
           </p>
           <div className="flex items-center">
@@ -40,7 +40,7 @@ const Banner = () => {
               Get started
             </a>
             <a
-              href="/"
+              href="/service"
               aria-label=""
               className="inline-flex items-center font-semibold text-gray-800 transition-colors duration-200 hover:text-deep-purple-accent-700"
             >

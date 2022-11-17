@@ -6,7 +6,7 @@ const Service = () => {
      const [services, setServices] = useState([]);
     
     useEffect( () =>{
-        fetch('https://service-review-server-side-gray.vercel.app/services')
+        fetch('https://service-review-server-side-sable.vercel.app/services')
         .then(res =>res.json())
         .then(data => setServices(data))
     }, []);
@@ -28,7 +28,7 @@ const Service = () => {
                     </SingleServiceCard>)
                 }
             </div>
-            <Link to='/allServices'><button type="button" className="px-8 py-3 font-semibold rounded-full dark:bg-gray-100 dark:text-gray-800">See more...</button></Link>
+            <Link to='/allServices'><button type="button" className="px-8 py-3 font-semibold rounded-full bg-gray-100 text-gray-800">See more...</button></Link>
 	        </div>
         </section>
     </div>

@@ -25,7 +25,7 @@ const UpdateReviews = () => {
     }
     
 
-    fetch(`https://service-review-server-side-gray.vercel.app/reviewRoute/${review._id}`, {
+    fetch(`https://service-review-server-side-sable.vercel.app/reviewRoute/${review._id}`, {
     method: "PUT",
     headers: {
         "content-type": "application/json",
@@ -51,17 +51,17 @@ const UpdateReviews = () => {
             <h2>this is route{review.serviceName}</h2>
             <form onSubmit={handleUpdate} className="self-stretch mx-auto space-y-3 ng-untouched ng-pristine ng-valid">
 				<div>
-					<input  name="name" type="text" placeholder="First Name" defaultValue={review?.name} className="w-full rounded-md focus:ring focus:ring-violet-400 dark:border-gray-700 p-5" />
+					<input  name="name" type="text" placeholder="First Name" defaultValue={review?.name} className="w-full rounded-md focus:ring focus:ring-violet-400 border-gray-700 p-5" />
 				</div>
                 <div>
-                    <input  name="email" type="email" placeholder="Your email" defaultValue={user?.email} className="w-full rounded-md focus:ring focus:ring-violet-400 dark:border-gray-700 p-5" readOnly />
+                    <input  name="email" type="email" placeholder="Your email" defaultValue={user?.email} className="w-full rounded-md focus:ring focus:ring-violet-400 border-gray-700 p-5" readOnly />
                 </div>
                 <div>
-                    <textarea name="feedback" type="text" placeholder="Your feedback" defaultValue={review?.feedback} className="w-full rounded-md focus:ring focus:ring-violet-400 dark:border-gray-700 p-5" required />
+                    <textarea name="feedback" type="text" placeholder="Your feedback" defaultValue={review?.feedback} className="w-full rounded-md focus:ring focus:ring-violet-400 border-gray-700 p-5" required />
                 </div>
 				
                 
-				<button type="submit" className="w-6/12 py-2 font-semibold rounded dark:bg-violet-400 dark:text-gray-900">Join the waitlist</button>
+				<button type="submit" className="w-6/12 py-2 font-semibold rounded bg-violet-400 text-gray-900">Join the waitlist</button>
                 
             </form>
         </div>

@@ -43,30 +43,30 @@ const Register = () => {
 
     return (
 		<div>
-         <div className="w-full mx-auto bg-gray-200 max-w-md p-8 space-y-3 rounded-xl dark:bg-gray-900 dark:text-gray-100">
-	<h1 className="text-2xl font-bold text-center">Login</h1>
-	<form onSubmit={handleRegister} className="space-y-6 ng-untouched ng-pristine ng-valid">
+         <div className="w-full mx-auto m-6 bg-gray-200 max-w-md p-8 space-y-3 rounded-xl bg-gray-600 text-gray-100">
+	<h1 className="text-2xl font-bold text-center">Sign Up</h1>
+	<form onSubmit={handleRegister} className="space-y-6 ng-untouched ng-pristine  ng-valid">
         <div className="space-y-1 text-sm">
-			<label for="username" className="block dark:text-gray-400">Username</label>
-			<input type="text" name="username"  placeholder="Username" className="w-full px-4 py-3 rounded-md dark:border-gray-700 dark:bg-gray-900 dark:text-gray-100 focus:dark:border-violet-400" />
+			<label for="username" className="block text-gray-400">Username</label>
+			<input type="text" name="username"  placeholder="Username" className="w-full px-4 py-3 rounded-md border-gray-700 bg-gray-900 text-gray-100 focus:border-violet-400" />
 		</div>
 		<div className="space-y-1 text-sm">
-			<label for="username" className="block dark:text-gray-400">Email</label>
-			<input type="text" name="email"  placeholder="Enter you Email" required className="w-full px-4 py-3 rounded-md dark:border-gray-700 dark:bg-gray-900 dark:text-gray-100 focus:dark:border-violet-400" />
+			<label for="username" className="block text-gray-400">Email</label>
+			<input type="text" name="email"  placeholder="Enter you Email" required className="w-full px-4 py-3 rounded-md border-gray-700 bg-gray-900 text-gray-100 focus:border-violet-400" />
 		</div>
 		<div className="space-y-1 text-sm">
-			<label for="password" className="block dark:text-gray-400">Password</label>
-			<input type="password" name="password"  placeholder="Password" required className="w-full px-4 py-3 rounded-md dark:border-gray-700 dark:bg-gray-900 dark:text-gray-100 focus:dark:border-violet-400" />
-			<div className="flex justify-end text-xs dark:text-gray-400">
+			<label for="password" className="block text-gray-400">Password</label>
+			<input type="password" name="password"  placeholder="Password" required className="w-full px-4 py-3 rounded-md border-gray-700 bg-gray-900 text-gray-100 focus:border-violet-400" />
+			<div className="flex justify-end text-xs text-gray-400">
 				<a rel="noopener noreferrer" href="">Forgot Password?</a>
 			</div>
 		</div>
-		<button type='submit' className="block w-full p-3 text-center rounded-sm dark:text-gray-900 dark:bg-violet-400">Sign in</button>
+		<button type='submit' className="block w-full p-3 text-center rounded-sm text-gray-900 bg-violet-400">Sign in</button>
 	</form>
 	<div className="flex items-center pt-4 space-x-1">
-		<div className="flex-1 h-px sm:w-16 dark:bg-gray-700"></div>
-		<p className="px-3 text-sm dark:text-gray-400">Login with social accounts</p>
-		<div className="flex-1 h-px sm:w-16 dark:bg-gray-700"></div>
+		<div className="flex-1 h-px sm:w-16 bg-gray-700"></div>
+		<p className="px-3 text-sm text-gray-400">Login with social accounts</p>
+		<div className="flex-1 h-px sm:w-16 bg-gray-700"></div>
 	</div>
 	<div className="flex justify-center space-x-4">
 		<button onClick={handleGoogleLogin} aria-label="Log in with Google"
@@ -77,8 +77,8 @@ const Register = () => {
 		</button>
 		
 	</div>
-	<p className="text-xs text-center sm:px-6 dark:text-gray-400">Already have an account?
-		<a rel="noopener noreferrer"  className="underline dark:text-gray-100" ><Link  to="/login">Log in</Link></a>
+	<p className="text-xs text-center sm:px-6 text-gray-400">Already have an account?
+		<a rel="noopener noreferrer"  className="underline text-gray-100" ><Link  to="/login">Log in</Link></a>
 	</p>
 </div>
 
