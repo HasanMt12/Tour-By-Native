@@ -12,31 +12,31 @@ const handleSignOut = () => {
 
      const [isMenuOpen, setIsMenuOpen] = useState(false);
      const menu = <>
-     <li className=' font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400'><Link to='/'>Home</Link></li>
+     <li className=' font-medium tracking-wide text-sky-900 transition-colors duration-200 hover:text-sky-600'><Link to='/'>Home</Link></li>
         
         {
             user?.email ? 
             <>
-              <li className='tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400'><Link to='/myReview'>my reviews</Link></li>
-              <li className='tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400'>
-              <button className='tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400' onClick={ handleSignOut } >Sign Out</button>
+              <li className='tracking-wide font-medium text-sky-900 uppercase transition-colors duration-200 hover:text-sky-600'><Link to='/myReview'>my reviews</Link></li>
+              <li className='tracking-wide font-medium text-sky-900 uppercase transition-colors duration-200 hover:text-sky-600'>
+              <button className='tracking-wide font-medium text-sky-900 uppercase transition-colors duration-200 hover:text-sky-600' onClick={ handleSignOut } >Sign Out</button>
               </li>
-              <li className='tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400'><Link to='/AddService'>Add service</Link></li>
+              <li className='tracking-wide font-medium text-sky-900 uppercase transition-colors duration-200 hover:text-sky-600'><Link to='/AddService'>Add service</Link></li>
 
             </>
             :
-           <li className=' font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400'><Link to='/login'>login</Link></li>
+           <li className=' font-medium tracking-wide text-sky-900 transition-colors duration-200 hover:text-sky-600'><Link to='/login'>login</Link></li>
         }
     
      
 
-     <li className=' font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400'><Link to='/service'>service</Link></li>
-     <li className=' font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400'><Link to='/blog'>blog</Link></li>
-     <li className=' font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400'><Link to='/faq'>FAQ</Link></li> 
+     <li className=' font-medium tracking-wide text-sky-900 transition-colors duration-200 hover:text-sky-600'><Link to='/service'>service</Link></li>
+     <li className=' font-medium tracking-wide text-sky-900 transition-colors duration-200 hover:text-sky-600'><Link to='/blog'>blog</Link></li>
+     <li className=' font-medium tracking-wide text-sky-900 transition-colors duration-200 hover:text-sky-600'><Link to='/faq'>FAQ</Link></li> 
      
      </>
     return (
-       <div className="bg-gray-900">
+       <div className="bg-gray-100 text-sky-900 rounded-3xl">
       <div className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
         <div className="relative flex items-center justify-between">
           <a
@@ -46,19 +46,19 @@ const handleSignOut = () => {
             className="inline-flex items-center"
           >
             
-            <span className="ml-2 text-xl font-bold tracking-wide text-gray-100 uppercase">
+            <span className="ml-2 text-xl font-bold tracking-wide text-sky-900 uppercase">
               Tour By Native
             </span>
           </a>
-          <ul className="flex items-center hidden space-x-8 lg:flex">
-           {menu}
+          <ul className="flex items-center hidden space-x-8 lg:flex text-sky-900 uppercase ">
+         {menu}
     
           </ul>
           <ul className="flex items-center hidden space-x-8 lg:flex">
             <li>
               <a
                 href="/signup"
-                className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
+                className="inline-flex items-center border border-sky-600 hover:bg-transparent hover:text-sky-900 focus:outline-none focus:ring active:text-sky-500 justify-center h-12 px-6 bg-sky-900 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
                 aria-label="Sign up"
                 title="Sign up"
               >
@@ -100,7 +100,7 @@ const handleSignOut = () => {
                         className="inline-flex items-center"
                       >
                        
-                        <span className="ml-2 text-xl font-bold tracking-wide text-gray-200 uppercase">
+                        <span className="ml-2 text-xl font-bold tracking-wide text-sky-900 uppercase">
                           Tour By native
                         </span>
                       </a>

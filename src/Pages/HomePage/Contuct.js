@@ -3,10 +3,10 @@ import React from 'react';
 const Contuct = () => {
     return (
         <div>
-                <section className="py-6 dark:bg-gray-800 dark:text-gray-50">
+                <section className="py-6  bg-slate-100  text-gray-800">
 	<div className="grid max-w-6xl grid-cols-1 px-6 mx-auto lg:px-8 md:grid-cols-2 md:divide-x">
 		<div className="py-6 md:py-0 md:px-6">
-            <h1 className="text-2xl text-sky-500 font-bold">Tour By native</h1>
+            <h1 className="text-2xl text-sky-900 font-bold">Tour By native</h1>
 			<h1 className="text-4xl font-bold">Get in touch</h1>
 			<p className="pt-2 pb-4">Fill in the form to start a conversation</p>
 			<div className="space-y-4">
@@ -34,17 +34,17 @@ const Contuct = () => {
 		<form  className="flex flex-col py-6 space-y-6 md:py-0 md:px-6 ng-untouched ng-pristine ng-valid">
 			<label className="block">
 				<span className="mb-1">Full name</span>
-				<input type="text" placeholder="Leroy Jenkins" className="block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:ring-violet-400 dark:bg-gray-800" />
+				<input type="text" placeholder="Leroy Jenkins" className="block w-full p-4 mt-1 text-sky-900 rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:ring-sky-400  bg-slate-300" />
 			</label>
 			<label className="block">
 				<span className="mb-1">Email address</span>
-				<input type="email" placeholder="leroy@jenkins.com" className="block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:ring-violet-400 dark:bg-gray-800" />
+				<input type="email" placeholder="leroy@jenkins.com" className="block w-full p-4 mt-1 text-sky-900 rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:ring-sky-400  bg-slate-300" />
 			</label>
 			<label className="block">
 				<span className="mb-1">Message</span>
-				<textarea rows="3" className="block w-full rounded-md focus:ring focus:ring-opacity-75 focus:ring-violet-400 dark:bg-gray-800"></textarea>
+				<textarea rows="3" className="block w-full p-4 mt-1 text-sky-900 rounded-md focus:ring focus:ring-opacity-75 focus:ring-sky-400  bg-slate-300"></textarea>
 			</label>
-			<button type="button" className="self-center px-8 py-3 text-lg rounded focus:ring hover:ring focus:ring-opacity-75 dark:bg-violet-400 dark:text-gray-900 focus:ring-violet-400 hover:ring-violet-400">Submit</button>
+			<button type="button" className="self-center px-8 w-full py-3 text-lg rounded border bg-sky-900 text-gray-100 border-sky-600 hover:bg-transparent hover:text-sky-900 focus:outline-none focus:ring active:text-sky-500">Submit</button>
 		</form>
 	</div>
 </section>
